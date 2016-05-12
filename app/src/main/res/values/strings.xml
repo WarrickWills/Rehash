@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Rehash</string>
+    <string name="buttonString">Press Me!</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login_text">Log In</string>
+    <string name="register_text">Register</string>
+</resources>
