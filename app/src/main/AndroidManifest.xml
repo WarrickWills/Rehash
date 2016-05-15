@@ -21,10 +21,9 @@
         <activity
             android:name=".Register"
             android:parentActivityName=".Login" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name="TaskDisplay" />
+        <activity android:name="Notifications" />
     </application>
 
 </manifest>

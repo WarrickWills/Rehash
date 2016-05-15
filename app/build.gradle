@@ -26,4 +26,6 @@ dependencies {
     compile 'com.android.support:design:24.0.0-alpha2'
     compile 'com.github.alamkanak:android-week-view:1.2.6'
     compile 'com.firebase:firebase-client-android:2.5.2+'
+    compile 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
 }
