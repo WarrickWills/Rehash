@@ -10,6 +10,10 @@
         <menu>
             <group android:checkableBehavior="single">
                 <item
+                    android:id="@+id/task_view"
+                    android:icon="@drawable/ic_week_view"
+                    android:title="Task View" />
+                <item
                     android:id="@+id/nav_one"
                     android:icon="@drawable/ic_one_day_view"
                     android:title="One Day's View" />
@@ -22,6 +26,7 @@
                     android:id="@+id/nav_week"
                     android:icon="@drawable/ic_week_view"
                     android:title="Week View" />
+
             </group>
         </menu>
     </item>

@@ -29,8 +29,9 @@ public class Login extends AppCompatActivity {
             public void onAuthenticated(AuthData authData) {
                 // Authenticated successfully with payload authData
                 Log.i("login","login success");
-                Intent i = new Intent(Login.this,MainActivity.class);
+                Intent i = new Intent(Login.this, MainActivity.class);
                 startActivity(i);
+                finish();
             }
             @Override
             public void onAuthenticationError(FirebaseError firebaseError) {

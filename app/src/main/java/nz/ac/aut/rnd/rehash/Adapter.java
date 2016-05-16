@@ -7,19 +7,20 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import com.alamkanak.weekview.WeekViewEvent;
+
 import java.util.List;
 
 /**
  * Created by Stanton on 13/05/2016.
  * Version 1.0
  */
-public class Adapter extends ArrayAdapter<Task> {
+public class Adapter extends ArrayAdapter<WeekViewEvent> {
     private Context aContext;
     private int aResource;
-    private final List<Task> tasks;
+    private final List<WeekViewEvent> tasks;
 
-    public Adapter(Context context, int resource, List<Task> newTask) {
+    public Adapter(Context context, int resource, List<WeekViewEvent> newTask) {
         super(context, resource, newTask);
         this.aContext = context;
         this.aResource = resource;
@@ -35,14 +36,15 @@ public class Adapter extends ArrayAdapter<Task> {
             view = layoutInflater.inflate(aResource, null);
         }
 
-        Task task = tasks.get(position);
+        WeekViewEvent task = tasks.get(position);
 
         if (task != null) {
             TextView item_title = (TextView) view.findViewById(R.id.item_title);
             TextView item_shortDesc = (TextView) view.findViewById(R.id.item_shortDesc);
             /** Set data to your Views. */
-            item_title.setText(task.getTitle());
-            item_shortDesc.setText(task.getDesc());
+            item_title.setText(task.getName());
+            item_shortDesc.setText("Start Time : "+task.getStartTime().getTime().toString()+
+                                    "\nEnd Time : "+task.getEndTime().getTime().toString());
         }
 
         return view;
