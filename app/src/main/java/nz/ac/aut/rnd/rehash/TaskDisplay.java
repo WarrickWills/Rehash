@@ -23,7 +23,7 @@ public class TaskDisplay  extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.taskdisplay_main);
 
-        Task task1 = new Task("Task 1", "Eat a dick");
+        Task task1 = new Task("Task 1", "Eat a meal");
         Task task2 = new Task("Task 2", "Eat a pill");
         task.add(task1);
         task.add(task2);
