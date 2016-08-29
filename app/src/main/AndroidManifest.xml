@@ -29,6 +29,12 @@
         <activity
             android:name=".TaskView"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Alarm"
+            android:parentActivityName=".MainActivity" />
+        <receiver android:name=".NotificationReceiver" >
+        </receiver>
+
     </application>
 
 </manifest>
